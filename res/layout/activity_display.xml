@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    tools:context=".DisplayActivity" >
+
+    <TextView
+        android:id="@+id/word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="5sp"
+        android:text="@string/word"
+        android:textColor="@color/textBlue"
+        android:textSize="30sp" />
+
+    <ListView
+        android:id="@+id/meanings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/otherheading"
+        android:padding="5sp" />
+
+	<TextView
+	    android:id="@+id/greheading"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/buttons"
+	    android:padding="5sp"
+	    android:text="@string/greheading"
+	    android:textColor="@color/textBlue"
+	    android:textSize="14sp"
+	    android:textStyle="italic" />
+        
+    <TextView
+        android:id="@+id/gremeaning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/greheading"
+        android:padding="5sp"
+        android:paddingLeft="15sp"
+        android:textSize="18sp" />
+       
+	<View
+	    android:id="@+id/div"		    
+	    android:layout_width="fill_parent"
+	    android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/gremeaning"		    
+	    android:background="@color/divider"/>
+		
+	<TextView
+	    android:id="@+id/otherheading"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/div"
+	    android:padding="5sp"
+	    android:text="@string/otherheading"
+	    android:textColor="@color/textBlue"
+	    android:textSize="14sp"
+	    android:textStyle="italic" />
+	
+	<Button
+	    android:id="@+id/bview"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/word"
+	    android:layout_centerHorizontal="true"
+	    android:background="@color/dark"
+	    android:text="@string/viewbutton"
+	    android:textColor="@android:color/white" />
+
+	<LinearLayout
+	    android:id="@+id/buttons"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/bview"
+	    android:layout_marginTop="16dp"
+	    android:orientation="horizontal" >
+
+	   
+
+	    <Button
+	        android:id="@+id/prev1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:background="@color/dark"
+	        android:text="@string/prev"
+	        android:textColor="@android:color/white" />
+	 <Button
+	        android:id="@+id/next1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:background="@color/dark"
+	        android:text="@string/next"
+	        android:textColor="@android:color/white" />
+	</LinearLayout>
+
+</RelativeLayout>
